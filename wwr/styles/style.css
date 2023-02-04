@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Source+Sans+Pro&display=swap');
 ::content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +7,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a :hover {
     background-color: #364958;
@@ -13,12 +15,17 @@ nav a :hover {
 }
 .msg {
     background-color: #364958;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: white;
+    font-family: "Black Ops One";
 }
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -39,6 +46,8 @@ header {
 footer {
     background-color: #364958;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: white;
@@ -55,11 +64,19 @@ footer p a:hover {
 }
 body {
     background-color: #55828b;
+    font-family: "Source Sans", "Helvetica", "sans-serif";
+    font-size: 22px;
+    margin: 0%;
+    padding: 0%;
 }
 .book, .join {
     background-color: #364958;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #364958;
@@ -67,6 +84,9 @@ body {
 }
 .home-title {
     color: white;
+    font-family: "Black Ops One";
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: white;
@@ -79,4 +99,23 @@ h4 {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+h2 {
+    margin: 0%;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid black;
+}
+main section img {
+    box-sizing: border-box;
 }
