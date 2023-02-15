@@ -1,0 +1,42 @@
+h1 {
+    font-size: 2em;
+}
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.helloworld {
+    font-size: 3em;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+section {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+    background-color: lightgrey;
+    text-align: right;
+    border: 2px solid black;
+    border-radius: 15px 15px 15px 15px;
+}
+.shifu {
+    width: 350px;
+    padding: 15px;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+.texting {
+    grid-column: 1;
+    text-align: left;
+    color: orange;
+    margin-left: 1.5em;
+}
+.desc {
+    grid-column: 1;
+    text-align: left;
+    color: purple;
+    font-size: 1em;
+}

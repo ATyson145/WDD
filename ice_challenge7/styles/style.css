@@ -1,0 +1,73 @@
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    grid-column: 2/4;
+    width: 100%;
+}
+body {
+    background-color: black;
+}
+.button {
+    background-color: orange;
+    color: white;
+    text-align: center; 
+    font-size: 16px;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.text {
+    grid-column: 2;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: orange;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .contents {
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .text1 {
+    width: 50%;
+    padding: 12px 20px;
+  }
+  .text2 {
+    width:50%;
+    padding: 12px 20px;
+    margin-top: 20px;
+  }
