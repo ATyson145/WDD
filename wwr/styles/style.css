@@ -12,9 +12,10 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 35px;
+    background-color: #2639485e;
 }
-nav a :hover {
-    background-color: #364958;
+nav a:hover {
+    background-color: #000000;
     color: white;
 }
 .msg {
@@ -106,7 +107,7 @@ body {
     padding: 0%;
 }
 .book, .join {
-    background-color: #364958;
+    background-color: #e6d067;
     color: white;
     text-decoration: none;
     font-size: 18px;
