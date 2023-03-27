@@ -41,7 +41,7 @@ body {
     margin: 0%;
     padding: 0%;
 }
-#home_intro {
+#intro_reading {
     text-align: center;
     border: 2px solid black;
     background-color: #353535;
@@ -49,7 +49,7 @@ body {
     margin-left: 100px;
     margin-right: 100px;
 }
-.intro-title {
+.intro-reading {
     margin-bottom: -20px;
 }
 #home_intro h3 {
@@ -139,74 +139,4 @@ footer a {
 .social img:hover {
     opacity: .8;
     transform: scale(1.1);
-}
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    perspective: 1000px;
-    grid-row: 7/8;
-    grid-column-start: 3;
-    margin-top: 100px;
-}
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.flip-card-front {
-    background-color: white;
-    color: black;
-}
-.flip-card-back {
-    background-color: #353535;
-    color: white;
-    transform: rotateY(180deg);
-}
-@media screen and (max-width: 900px) {
-    #home-intro, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #home-intro {
-        margin-top: 0;
-    }
-    #intro-msg {
-        margin-top: 0;
-    }
-    .home-title {
-        font-size: 25px;
-        color: white
-    }
-    .act-image, .edu-image {
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    footer {
-        margin-top: 25px;
-    }
 }
