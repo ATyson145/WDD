@@ -34,6 +34,40 @@ h3 {
 p {
     font-family: 'PT Serif', Helvetica, Sans-serif;
 }
+#main-idea {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+#reading-box {
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+.reading {
+    border: 2px solid  black;
+}
+.reading:hover {
+    opacity: .9;
+    transform: scale(1.05);
+}
+.idea-title {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    background-color: #e7c24f;
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.questions {
+    margin-top: 50px;
+    grid-column: 4/6;
+    grid-row: 2/3;
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 1.8em;
+}
 body {
     background-color: #458FBE;
     font-family: 'PT Serif', Helvetica, Sans-serif;;
@@ -49,9 +83,6 @@ body {
     margin-left: 100px;
     margin-right: 100px;
 }
-.intro-reading {
-    margin-bottom: -20px;
-}
 #home_intro h3 {
     font-size: 20px;
     padding: 25px;
@@ -62,6 +93,60 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: #458FBE;
     font-size: 18px;
+}
+#intro_writing {
+    text-align: center;
+    border: 2px solid black;
+    background-color: #353535;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-column: 1/7;
+}
+.commas {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.tip1 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+.semi {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.tip2 {
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+.writ {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+.tip3 {
+    grid-column: 3/5;
+    grid-row: 6/7;
+}
+.commas, .semi, .writ {
+    padding-top: 50px;
+    width: 250px;
+}
+.tip1, .tip2, .tip3 {
+    padding-top: 27px;
+}
+.tip1 h2, .tip2 h2, .tip3 h2 {
+    background-color:#e7c24f;
+    border: 2px solid black;
+    padding: 5px;
+}
+.tip1 p, .tip2 p, .tip3 p {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+}
+.commas:hover, .semi:hover, .writ:hover {
+    opacity: .8;
+    transform: scale(1.05);
 }
 footer {
     background-color: black;
